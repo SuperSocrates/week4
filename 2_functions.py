@@ -2,15 +2,19 @@ import faa
 
 # Change the following code all you want:
 
-def get_city_for():
-  pass
 
-def get_temperature_at():
-  pass
+def get_city_for(code):
+  data = faa.get_weather(code)
+  return data['city']
+  
 
-def get_wind_at():
-  pass
+def get_temperature_at(code):
+  data = faa.get_weather(code)
+  return data['weather']['temp']
 
+def get_wind_at(code):
+  data = faa.get_weather(code)
+  return data['weather']['wind']
 
 # Do not change the code below this line.
 

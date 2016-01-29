@@ -1,6 +1,6 @@
 # Using constructors
 
-my_airport = Airport('ORD')
+my_airport = Airport('ORD') #instantiate an object ORD of class Airport
 
 
 
